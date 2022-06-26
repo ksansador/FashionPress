@@ -1,0 +1,42 @@
+.header{
+  background: #f7f7f7;
+  padding: 0 15px;
+  &__logo{
+    grid-column:  2/6;
+    justify-self: self-start;
+    align-self: center;
+    @include md{
+      grid-column: 1/10;
+    }
+  }
+  &__userbar{
+    grid-column: 6/9;
+    display: flex;
+    font-size: 14px;
+    justify-self: self-end;
+    @include md {
+      grid-column: 1/10;
+    }
+    &-btn{
+      border: none;
+      margin-right: 1px;
+      color: $text-color;
+      padding: 0 16px;
+    }
+    &-bag{
+      color: $baseColorRed;
+      text-decoration: none;
+      background: $lightgrey;
+      line-height: 69px;
+      padding: 0 29px;
+      margin-right: 10px;
+      &-count{
+        color: $text-color;
+      }
+    }
+  }
+  &__bag-icon {
+    vertical-align: middle;
+    display: inline-block;
+  }
+}

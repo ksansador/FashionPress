@@ -1,0 +1,34 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  color: #565555;
+  font-weight: 500;
+  background: url(../images/background.jpg) 0 0 repeat;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.all-page{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(69px, auto) minmax(46px, auto) minmax(405px, auto) minmax(43px, auto) minmax(768px, auto) minmax(261px, auto) minmax(48px, auto);
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr repeat(7, minmax(auto, 136px)) 1fr;
+}
+
+/* font-family: 'Font Awesome\ 5 Brands'; */

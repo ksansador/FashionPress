@@ -1,0 +1,40 @@
+@mixin placeholder {
+  &::placeholder{
+    @content;
+  }
+  &::-moz-placeholder{
+    @content;
+  }
+  &::-ms-input-placeholder{
+    @content;
+  }
+  &::-moz-placeholder{
+    @content;
+  }
+
+}
+
+@mixin make-cols {
+  @for $i from 1 through 12 {
+    &-#{$i} {
+      width: percentage($i / 12);
+    }
+  }
+}
+
+@mixin lg {
+  @media screen and (max-width: 992px) {
+    @content;
+  }
+}
+@mixin md {
+  @media screen and (max-width: 700px) {
+    @content;
+  }
+}
+
+@mixin sm{
+  @media screen and (max-width: 576px) {
+    @content;
+  }
+}

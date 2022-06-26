@@ -1,0 +1,38 @@
+.form{
+  grid-column: 2/5;
+  position: relative;
+  display: flex;
+  align-items: center;
+  transition: all 0.5s;
+  @include sm{
+    grid-column: 1/10;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  &__label{
+    color: $baseColorRed;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 0 13px 0 3px;
+      transition: all 0.5s;
+    @include sm{
+      width: 100%;
+    }
+  }
+  &__input {
+    background: #c9c9c9;
+    border: none;
+    height: 29px;
+    width: 58%;
+    transition: all 0.5s;
+    @include sm {
+      width:80%;
+    }
+  }
+  &__btn {
+    background: url(../images/ic-search.svg) 50% no-repeat, $baseColorRed;
+    border: none;
+    width: 32px;
+    height: 29px;
+  }
+}

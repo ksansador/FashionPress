@@ -1,0 +1,30 @@
+.search-bar{
+  background: $lightgrey;
+  padding: 3px 0;
+  margin: 1px 0 0 0;
+  @include md{
+    padding: 20px 15px;
+  }
+
+  &__buttons{
+    grid-column: 8;
+    justify-self: flex-end;
+    align-self: center;
+    @include sm {
+      grid-column: 1/10 ;
+    }
+  }
+  &__btn-bars{
+    margin-right: 4px;
+    background: url(../images/ic-bars.svg)  no-repeat;
+
+  }
+  &__btn-list{
+    background: url(../images/ic-list.svg)  no-repeat;
+
+
+  }
+
+}
+
+
